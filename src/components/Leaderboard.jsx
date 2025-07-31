@@ -7,7 +7,7 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/leaderboard")
+    axios.get("https://she-can-backend.vercel.app/api/leaderboard")
       .then(res => {
         let leaderboardData = [...res.data];
         
