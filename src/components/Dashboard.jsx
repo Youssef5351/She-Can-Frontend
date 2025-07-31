@@ -6,7 +6,7 @@ export default function Dashboard() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/user")
+    axios.get("https://she-can-backend.vercel.app/api/user")
       .then(res => {
         const userData = res.data;
         
